@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/MUX312.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/and_gate2.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/full_adder2.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/or_gate2.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/ALU4.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/PC_REG.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/ALU_16Bit3.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/mux3_11.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/Memory.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/Registers2.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/mux2_11.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/Signextend1.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/Control1.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/CPU_33802.vhd"
+vhdl xil_defaultlib  "../../../../ProjectPt1stuff/CPU_3380_Test11.vhd"
+
+# Do not sort compile order
+nosort

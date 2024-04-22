@@ -1,0 +1,44 @@
+
+*** Running vivado
+    with args -log CPU_3380.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_3380.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source CPU_3380.tcl -notrace
+Command: synth_design -top CPU_3380 -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-1223] The version limit for your license is '2018.07' and will expire in -2072 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7308 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 325.734 ; gain = 112.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CPU_3380' [C:/Users/dmurillo/Downloads/ProjectPt1stuff/CPU_33802.vhd:16]
+INFO: [Synth 8-3491] module 'PC_REG' declared at 'C:/Users/dmurillo/Downloads/ProjectPt1stuff/PC_REG.vhd:6' bound to instance 'CPU_PC' of component 'PC_REG' [C:/Users/dmurillo/Downloads/ProjectPt1stuff/CPU_33802.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'PC_REG' [C:/Users/dmurillo/Downloads/ProjectPt1stuff/PC_REG.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'PC_REG' (1#1) [C:/Users/dmurillo/Downloads/ProjectPt1stuff/PC_REG.vhd:15]
+	Parameter INPUT bound to: Instr2.txt - type: string 
+	Parameter OUTPUT bound to: out.txt - type: string 
+INFO: [Synth 8-3491] module 'Memory' declared at 'C:/Users/dmurillo/Downloads/ProjectPt1stuff/Memory.vhd:26' bound to instance 'CPU_Instr_MEM' of component 'Memory' [C:/Users/dmurillo/Downloads/ProjectPt1stuff/CPU_33802.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/dmurillo/Downloads/ProjectPt1stuff/Memory.vhd:43]
+	Parameter INPUT bound to: Instr2.txt - type: string 
+	Parameter OUTPUT bound to: out.txt - type: string 
+ERROR: [Synth 8-3302] unable to open file 'Instr2.txt' in 'r' mode [C:/Users/dmurillo/Downloads/ProjectPt1stuff/Memory.vhd:56]
+ERROR: [Synth 8-421] mismatched array sizes in rhs and lhs of assignment [C:/Users/dmurillo/Downloads/ProjectPt1stuff/Memory.vhd:66]
+ERROR: [Synth 8-285] failed synthesizing module 'Memory' [C:/Users/dmurillo/Downloads/ProjectPt1stuff/Memory.vhd:43]
+ERROR: [Synth 8-285] failed synthesizing module 'CPU_3380' [C:/Users/dmurillo/Downloads/ProjectPt1stuff/CPU_33802.vhd:16]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 363.043 ; gain = 149.598
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 0 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 02 14:37:49 2024...
