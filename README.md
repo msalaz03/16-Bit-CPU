@@ -2,9 +2,10 @@
 <br>
 
 <h2><b>Description</b></h2>
-<p>A fully implemented CPU that takes in a 16 bit instruction, to execute various instruction types, such i-type, r-type and j-type. The project successfully implements functions such as load word, store word effectively storing them in memory.</p>
+<p>A fully implemented CPU capable of executing various instruction types, including i-type, r-type, and j-type instructions, each encoded within a 16-bit format. The CPU efficiently performs functions such as loading words (load word) and storing words (store word), effectively managing data within its memory subsystem. Through meticulous design and implementation, the CPU seamlessly integrates these functionalities, enabling robust execution of complex programs and operations.</p>
 
-<br><br><br>
+<br>
+
 <h2 align = "center">List of Instructions Executed</h2>
 
 <table align = "center">
@@ -58,11 +59,23 @@
    <td>5</td>
    <td>a</td>
    <td>5</td>
-   <td>7td>
+   <td>7</td>
    <td>0</td>
 </tr>
- 
 </table>
 
-<img align = "center" src = "">
+<br>
+<h2 align = "center" >
+  Top Module Design 
+  <br>
+  <img  src = "top-module.PNG" >
+</h1>
+
+<br>
+<h2 align = "center">
+  Verification of Outputs (Waveform)
+  <br>
+  <img src = "cpu_project_waveform.png">
+</h1>
+
 
